@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: mall-order
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/ai-customer?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: io.dolphin.mallorder.entity
+logging:
+  level:
+    io.dolphin.mallorder.mapper: debug

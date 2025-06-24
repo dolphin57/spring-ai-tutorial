@@ -1,0 +1,10 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: dolphin-order-mcp-server
+  ai:
+    mcp:
+      server:
+        name: dolphin-order-mcp-server
+        version: 1.0.0

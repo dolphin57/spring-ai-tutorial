@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: mall-ai
+  threads:
+    virtual:
+      enabled: true
+  mvc:
+    static-path-pattern: /templates/**
+  thymeleaf:
+    cache: false
+  ai:
+    dashscope:
+      api-key: ${AI_DASHSCOPE_API_KEY}
